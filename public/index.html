@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>ToDo List</h1>
+    <div id="user-login">
+      <button onclick="login()">Login</button>
+      <button onclick="register()">Register</button>
+    </div>
+    <div id="user-info" style="display:none;">
+      <span id="username"></span>
+      <button onclick="logout()">Logout</button>
+    </div>
+    <input type="text" id="new-task" placeholder="Add a new task...">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="tasks">
+      <!-- Tasks will be appended here -->
+    </ul>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
